@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Adrian Arjoca</title>
+    <meta name="title" content="Adrian's Portfio" />
+    <!-- Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png"/>
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+
+  
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="#">
+              <img src="./assets/logo.png" alt="logo"/></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li><a class="nav-link" href="#">BlOG</a></li>
+            <li>
+              <a class="nav-link btn btn-primary" href="https://github.com/levraiardox">GITHUB <i class="fas fa-arrow-right"></i></a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="header-container">
+        <img class="profile-image" src="https://avatars.githubusercontent.com/u/110931544?v=4" alt="propic"/>
+        <h1>Hi, I'm Adrian</h1>
+        <p>aka Ardox</p>
+
+        <div class="content-text">
+          <h2>Linux architect since 2021</h2>
+          <h2>and AI autodicactic developer.</h2>
+          <p>I'm a french autodicactic person that loves learning new things about programming and AI.</p>
+        </div>
+        <a href="https://github.com/levraiardox" class="btn btn-secondary" target="_blank">See my Github</a>
+      </section>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Projects</h2>
+        <p>Check out some of my most important projects</p>
+      </div>
+
+      <article class="project">
+        <!-- Project 1 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>AxOS</h3>
+              <p>My own Linux distribution, made with love.</p>
+            </div>
+
+            <div class="project-link">
+              <a href="https://github.com/axos-project" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://axos-project.github.io" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Oriana</h3>
+              <p>Interactive AI assistant for a boosted productivity</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Porject 3 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Ariax</h3>
+              <p>A tiny multipurpose AI model - LLM and vLLM</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <a href="https://github.com/levraiardox" class="btn btn-secondary" target="_blank" >See my Github <i class="fas fa-arrow-right"></i></a>
+    </section>
+
+
+    <section id="contact" class="contact">
+      <div class="content-text">
+        <h2>Contact</h2>
+        <p>You can send me an email, I'll try to answer as soon as i can</p>
+      </div>
+
+      <form action="mail.php" method="POST" class="form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id="subject">
+        <label for="message">Message</label>
+        <textarea name="message" cols="30" rows="10"></textarea>
+        <input type="submit" value="Send" class="submit">
+      </form>
+    </section> <!-- end of support section -->
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:lvardox@proton.me">lvardox@proton.me (pro email)</a>
+        <a href="mailto:adrian.arjoca18@gmail.com">adrian.arjoca18@gmail.com (personal email)</a>
+        <!-- Social links -->
+        <div class="social">
+          <a href="https://instagram.com/lvardox" target="_blank"><img src="./assets/instagram-icon.svg" alt="Linkedin"/></a>
+          <a href="https://github.com/levraiardox" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="#" target="_blank"><img src="./assets/hashnode-icon.svg" alt="Hashnode"/></a>
+        </div>
+        <!-- Attribution -->
+        <p>Copyright &copy; LeVraiArdox <span id="datee"></span>, All rights reserved</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
