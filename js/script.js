@@ -65,3 +65,42 @@ let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.querySelector('.carousel');
+  const carouselItems = document.querySelectorAll('.carousel-item');
+  const numItems = carouselItems.length;
+  const itemWidth = carouselItems[0].offsetWidth + 20; // Width of item + margin-right
+  let currentIndex = 0;
+
+  // Clone items for infinite loop
+  const clones = [];
+  for (let i = 0; i < numItems; i++) {
+      const clone = carouselItems[i].cloneNode(true);
+      clones.push(clone);
+  }
+
+  clones.forEach(clone => carousel.appendChild(clone));
+
+  function goToSlide(index) {
+      carousel.style.transform = `translateX(${-itemWidth * index}px)`;
+      currentIndex = index;
+  }
+
+  function handleTransitionEnd() {
+      if (currentIndex >= numItems) {
+          currentIndex = 0;
+          carousel.style.transition = 'none';
+          goToSlide(currentIndex);
+      }
+  }
+
+  carousel.addEventListener('transitionend', handleTransitionEnd);
+
+  setInterval(() => {
+      currentIndex++;
+      carousel.style.transition = 'transform 0.5s ease';
+      goToSlide(currentIndex);
+  }, 1000); // Change 2000 to adjust carousel speed
+});

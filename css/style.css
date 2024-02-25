@@ -29,6 +29,8 @@
   --width-small: 600px;
   --width-medium: 1100px;
   --width-large: 1300px;
+
+  --caroussel-bg: #eeeeee;
 }
 
 [data-theme="dark"] {
@@ -41,6 +43,7 @@
   --card-background: #141414;
   --bg-secondary-two: #f4f4f4;
   --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
+  --caroussel-bg: #3f3f3f;
 }
 
 html {
@@ -368,4 +371,38 @@ body {
 
 .submit:hover {
   background-color: var(--primary-color);
+}
+.container-caroussel {
+  margin-top: 100px;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--caroussel-bg);
+  padding: 20px;
+}
+
+.carousel {
+  display: flex;
+  animation: scroll 10s linear infinite; /* Adjust duration as needed */
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  margin-right: 50px;
+}
+
+.carousel-item img {
+height: 200px;
+width: 200px;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
